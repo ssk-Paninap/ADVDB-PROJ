@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <link rel = "stylesheet" href="page_design.css">
+    </head>
+    <body>
+
+        <section class="hero">
+        <div class="heading">
+            <h1 class="about-head">About Us</h1>
+        </div>
+        <div class="container05">
+            <div class="hero-content">
+                <h2>Work It Out</h2>
+                <p>
+                    Welcome to our website, where we are dedicated to helping you achieve and maintain a healthier lifestyle. Our mission is to provide you with the knowledge and tools you need to prioritize your physical health and well-being. Whether you're just starting your fitness journey or looking to take your existing routine to the next level, we're here to guide you every step of the way.
+                
+                    At our core, we believe that a balanced diet, regular exercise, and a commitment to self-care are the cornerstones of a healthy life. Our expert team of fitness enthusiasts, nutritionists, and wellness experts are here to share their expertise, offering tips, advice, and customized workout plans to suit your individual needs and goals. We're not just a website; we're your partners in achieving your fitness aspirations.
+                
+                    Explore our comprehensive resources on nutrition, workout routines, and wellness practices to discover how you can become the best version of yourself. Join our community today and embark on a journey towards improved physical health, increased energy, and a happier, more fulfilling life.
+                </p>
+                
+                <a href="home.php" class="home-about">Home</a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 WorkItOut</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+            const scrollHeight = window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    
+            const opacity = 0.5 + (scrollHeight / documentHeight) * 0.5 ;
+    
+            footer.style.opacity = opacity.toFixed(2);
+        });
+    </script>
+    </body>
+    
+</html>
